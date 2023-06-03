@@ -20,5 +20,17 @@ div.clear {
 .txt1{
     width: 100%;
     padding: 30px 2%;
-    background-color: #ccc;
+    background: rgb(210, 210, 210);
+}
+
+.txt2{
+    margin-top: 200px;
+    width: 100%;
+    padding: 30px 2%;
+    background: rgb(100, 100, 100);
+}
+
+textarea{
+    margin-top: 200px;
+    margin-bottom: 200px;
 }

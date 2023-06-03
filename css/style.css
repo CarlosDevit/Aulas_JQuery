@@ -24,6 +24,7 @@ div.clear {
 .box{
     width:500px;
     height: 500px;
-    margin: 0 auto;
-    background-color: #ccc;
+    margin: 30px;
+    background: #ccc;
+    padding: 30px;
 }

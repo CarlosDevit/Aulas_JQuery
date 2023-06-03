@@ -1,32 +1,12 @@
 $(function () {
-    /*
-        var timer;
     
-        $(window).scroll(function(){
-            console.log('Scroll ativo');
-        })
-    
-        $(window).resize(function(){
-            clearTimeout(timer);
-            timer = setTimeout(function(){
-                location.href = "http://localhost/Aulas_JQuery/";
-            }, 1000);
-        })
-    
-        $('a').click(function(e){
-            e.preventDefault();
-            // ou pode usar: 
-            // return false 
-            
-        })
-    
-        */
+        var box = $('div.box');
 
-        $('.box').click(function(e){
-            e.stopPropagation();
-        })
+        console.log('width sem contar padding: ' + box.width());
+        console.log('height sem contar padding: '+box.height());
+        console.log('width contando padding: '+box.innerWidth());
+        console.log('height contando padding: ' + box.innerHeight());
 
-        $('body').click(function(){
-            $('.box').css('background-color','green')
-        })
+        console.log('Outer width : '+box.outerWidth(true));
+        console.log('Outer height : ' + box.outerHeight(true));
 });

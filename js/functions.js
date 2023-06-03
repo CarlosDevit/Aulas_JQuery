@@ -1,30 +1,32 @@
 $(function () {
+    /*
+        var timer;
+    
+        $(window).scroll(function(){
+            console.log('Scroll ativo');
+        })
+    
+        $(window).resize(function(){
+            clearTimeout(timer);
+            timer = setTimeout(function(){
+                location.href = "http://localhost/Aulas_JQuery/";
+            }, 1000);
+        })
+    
+        $('a').click(function(e){
+            e.preventDefault();
+            // ou pode usar: 
+            // return false 
+            
+        })
+    
+        */
 
-    function validarCliqueHover() {
-        $('.txt1').click(function () {
-            $('.txt2').css('background', 'red').css('color', 'white');
+        $('.box').click(function(e){
+            e.stopPropagation();
         })
 
-        $('.txt1').hover(function () {
-            $('.txt2').css('background', 'blue').css('color', 'white');
-        }, function () {
-            $('.txt2').css('background', 'rgb(100, 100, 100)').css('color', 'black');
+        $('body').click(function(){
+            $('.box').css('background-color','green')
         })
-
-        $('textarea').focus(function () {
-            console.log('Estou dentro do textarea!');
-        }).blur(function () {
-            console.log('Estou fora do textarea!');
-        })
-    }
-
-    function validarFormulario() {
-        $('select').change(function () {
-            console.log("Meu select foi alterado!");
-        })
-    }
-
-    validarFormulario();
-    validarCliqueHover();
-
 });

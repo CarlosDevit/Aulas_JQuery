@@ -1,19 +1,8 @@
-//Maneiras de inicialiaz com Jquery
-
-/*
 $(function(){
-    alert("Olá Mundo!")
-});
-
-$(document).ready(function(){
-    alert("Olá Mundo!")
-});
-
-$(window).on('load', function(){
-    alert("Olá Mundo!");
-})
-*/
-
-$(function(){
+    
+    setTimeout(function(){
+        $('#teste').css('background-color', 'blue')
+        $('#teste p').css('color', 'white').css('font-size', '20px')
+    }, 2000)
     
 });

@@ -21,10 +21,33 @@ div.clear {
     height: 3000px;
 } */
 
-.box{
-    width:500px;
-    height: 500px;
-    margin: 30px;
-    background: #ccc;
+.sp{
+    width: 100%;
     padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.txt{
+    padding: 2%;
+    width: 30%;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+}
+
+#ipb{
+    margin-left: 20px;
+    padding: 2%;
+    width: 30%;
 }

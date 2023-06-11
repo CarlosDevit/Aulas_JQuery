@@ -1,31 +1,26 @@
 $(function () {
 
-       /* var box = $('.box');
+        //append() para add conteudo/elementos no final do elemento selecionado
+        //$ ('.box div').eq(0).append('<h3>Meu elemento adicionado dinamicamente</h3>');
 
-        box.html('<div class="teste"><p>Olá Mundo!</p> ');
+        var el = $('<h3>Meu conteúdo p2</h3>').appendTo('.box div');
 
-        box.html(box.html() +'<div class="teste"><h1 class="texto1">Meu texto em Javascript</h1></div>');
+        el.css('color', 'red').css('font-size', '20px');
 
+        $(bx).prepend('<h1>Olá Mundo!</h1>');
 
-      $(b2).text('<div></div>');
-  
-        $(ip).val('Olá Mundo!')*/
+        var el2 = $('<h1>Olá Mundo! antes</h1>').prependTo($('.box')).css('color','purple')
 
-        $(ipb).click(function(){
-                var str  = $(ipt).val();
-                //Split separa nossa string com base no delimitador.
-                var var2 = str.split(',');
-                console.log(var2);
-                //substr recorta nossa string
-                console.log(str.substr(0,4));
+        var t = '<p>Meu conteúdo antes/após div box! </p>';
 
-                var splitstr = str.split('@');
+       // $('.box').before(t);
+       // $('.box').after(t);
 
-                if(splitstr[1] == 'hotmail.com'){
-                        $(ipt).css('opacity', '0');
-                }else{
-                        console.log('A condicao não bateu')
-                }
-        });
+       $(t).insertAfter($('.box')).css('color', 'blue');
+       $(t).insertBefore($('.box')).css('color', 'green');
+
+       setTimeout(function(){
+        $('.box').eq(1).remove();
+       },3000);
 
 });

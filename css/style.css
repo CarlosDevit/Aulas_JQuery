@@ -24,14 +24,16 @@ div.clear {
     padding: 2%;
     margin-top: 10px;
 }
+ .teste{
+    width: 32px;
+    height: 32px;
+    background: green;
+    display: none;
+ }
 
-
-p{
-    padding: 2%;
-}
-
-
-h1,h2,h3,h4{
-    padding: 1%;
-    margin-top: 10px;
-}
+ a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: chocolate;
+ }

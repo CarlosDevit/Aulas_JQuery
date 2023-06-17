@@ -1,26 +1,22 @@
 $(function () {
+/*
+    $('a').click(function () {
+        alert('Olá Mundo!');
+    })
 
-        //append() para add conteudo/elementos no final do elemento selecionado
-        //$ ('.box div').eq(0).append('<h3>Meu elemento adicionado dinamicamente</h3>');
+    $('body').on('click', 'a', function () {
+        alert('Olá Mundo!');
+        return false
+    });
 
-        var el = $('<h3>Meu conteúdo p2</h3>').appendTo('.box div');
+    setTimeout(function () {
+        $('body').html('<a href="">Meu Link</a>');
+    }, 3000);
+*/
+    var func = function(){
+        $('input[type=text]').eq($(this).index()).css('background', 'green');
+    }
 
-        el.css('color', 'red').css('font-size', '20px');
-
-        $(bx).prepend('<h1>Olá Mundo!</h1>');
-
-        var el2 = $('<h1>Olá Mundo! antes</h1>').prependTo($('.box')).css('color','purple')
-
-        var t = '<p>Meu conteúdo antes/após div box! </p>';
-
-       // $('.box').before(t);
-       // $('.box').after(t);
-
-       $(t).insertAfter($('.box')).css('color', 'blue');
-       $(t).insertBefore($('.box')).css('color', 'green');
-
-       setTimeout(function(){
-        $('.box').eq(1).remove();
-       },3000);
-
+    $('input[name=nome_pessoa]').keyup(func);
+   // $('input[name=nome_pessoa]').keydown(func);
 });

@@ -1,16 +1,33 @@
 $(function () {
+
+    var timer;
 /*
-    $('.box1').fadeOut(2000, function(){
-        $('.box2').fadeIn(1000);
-        console.log("Terminamos nossa animação!");
-    });
-    
-    */
+    var timeOut = function(){
+        $('.box2').animate({
+            'width': '40%',
+            'height': '500px'
+        }, 2000);
+    };
 
-    $('.box1').click(function(){
-        $('.box2').slideToggle(4000, function(){
-            location.href="http://www.google.com.br"
-        });
+    $('body').click(function(){
+        alert("Animação com timeout foi cancelada!");
+        clearTimeout(timer);
+    })
+
+    $('.box1').animate({
+        'width': '40%',
+        'height': '500px'
+    }, 2000, function () {
+        timer = setTimeout(timeOut,3000);
+    });
+*/
+
+    $('body').click(function(){
+        console.log("Intervalo cancelado");
+        clearInterval(timer);
     });
 
+    timer = setInterval(function(){
+        alert('olá mundo');
+    }, 3000);
 });

@@ -1,22 +1,16 @@
 $(function () {
 /*
-    $('a').click(function () {
-        alert('Olá Mundo!');
-    })
+    $('.box1').fadeOut(2000, function(){
+        $('.box2').fadeIn(1000);
+        console.log("Terminamos nossa animação!");
+    });
+    
+    */
 
-    $('body').on('click', 'a', function () {
-        alert('Olá Mundo!');
-        return false
+    $('.box1').click(function(){
+        $('.box2').slideToggle(4000, function(){
+            location.href="http://www.google.com.br"
+        });
     });
 
-    setTimeout(function () {
-        $('body').html('<a href="">Meu Link</a>');
-    }, 3000);
-*/
-    var func = function(){
-        $('input[type=text]').eq($(this).index()).css('background', 'green');
-    }
-
-    $('input[name=nome_pessoa]').keyup(func);
-   // $('input[name=nome_pessoa]').keydown(func);
 });

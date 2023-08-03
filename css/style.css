@@ -16,24 +16,20 @@ div.clear {
     clear: both;
 }
 
-
 /*******/
 
-.box{
-    background: #ccc;
-    padding: 2%;
-    margin-top: 10px;
-}
- .teste{
-    width: 32px;
-    height: 32px;
-    background: green;
-    display: none;
- }
-
- a{
-    text-decoration: none;
-    font-size: 30px;
+div.box{
+    width: 100%;
+    padding: 40px 2%;
+    background-color: rgb(210, 210, 210);
+    color: black;
     text-align: center;
-    color: chocolate;
- }
+    margin: 30px 0;
+}
+
+div.box2{
+    display: none;
+    color: brown;
+    background-color: aquamarine;
+
+}

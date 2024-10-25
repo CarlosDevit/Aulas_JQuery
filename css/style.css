@@ -18,7 +18,7 @@ div.clear {
 
 /*******/
 
-div.box{
+.box{
     width: 100%;
     padding: 40px 2%;
     background-color: rgb(210, 210, 210);
@@ -27,8 +27,12 @@ div.box{
     margin: 30px 0;
 }
 
-div.box2{
+.box2{
     color: brown;
     background-color: aquamarine;
 
+}
+
+.minhaclasse{
+    color: red;
 }

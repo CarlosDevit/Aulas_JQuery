@@ -6,16 +6,29 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
-    maximun-scale=1.0">
+    maximum-scale=1.0">
     <meta name="description" content="Conteúdo do meu site.">
     <meta name="keywords" content="palavras-chaves,separadas,por,virgula">
     <meta name="author" content="Carlos Devit">
-    <!-- icone site <link rel="shortcut icon" type="image-x/png" href="icone.ico"> -->
+    <link rel="icon" href="icons/favicon-32x32.png" sizes="32x32" type="image/x-icon">
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="container"></div><!-- container -->
+
+    <div class="bg">
+       <div class="form">
+        <div class="closeBtn">X</div><!-- closeBtn -->
+        
+        <input type="text" name="nome" placeholder="*Nome Completo">
+        <input type="text" name="telefone" placeholder="*Telefone">
+        <input type="text" name="email" placeholder="*E-mail">
+        <input type="submit" name="acao" value="Cadastrar">
+       </div><!-- form -->
+    </div><!-- bg -->
+
+
+    <div class="btn">Entrar em contato</div><!-- BTN -->
 
     <script src="js/jquery.js"></script>
     <script src="js/functions.js"></script>

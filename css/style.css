@@ -17,22 +17,111 @@ div.clear {
 }
 
 /*******/
-
-.box{
-    width: 100%;
-    padding: 40px 2%;
-    background-color: rgb(210, 210, 210);
-    color: black;
+/*botao bnt*/
+div.btn{
+    width: 80%;
+    max-width: 300px;
+    height: 100px;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100px;
     text-align: center;
-    margin: 30px 0;
+    background: #69a4d3;
+    border-radius: 10px;
+    border: 2px solid purple;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
-.box2{
-    color: brown;
-    background-color: aquamarine;
+/*Botao Fechar/Close btn*/
+
+div.closeBtn{
+    width: 32px;
+    height: 32px;
+    background-color: rgb(234, 48, 48);
+    color: white;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    border: 3px solid purple;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    display: flex; /* Usa Flexbox para centralizar */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    font-size: 19px; /* Tamanho da letra */
+    font-weight: bold; /* Deixa o X em negrito */
+    
+}
+
+/*background bg*/
+
+div.bg{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*formulario form*/
+
+div.form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 400px;
+    padding: 40px 2%;
+    height: 60%;
+    min-height: 380px;
+    max-height: 700px;
+    width: 94%;
+    border: 4px solid purple;
+    border-radius: 10px;
 
 }
 
-.minhaclasse{
-    color: red;
+/*texto input text*/
+
+div.form input[type=text]{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+
+}
+
+/*enviar input submit*/
+
+div.form input[type=submit]{
+    width: 100%;
+    height:48px;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 48px;
+    text-align: center;
+    background: #69a4d3;
+    border-radius: 10px;
+    border: 0;
 }
